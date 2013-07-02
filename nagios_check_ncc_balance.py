@@ -4,7 +4,7 @@
 ##########################################################################
  nagios_check_etherway_balance.py - Plugin for nagios to check balance privider Etherway.ru
 
- Copyright © 2009-2012 Denis 'Saymon21' Khabarov
+ Copyright © 2013 Denis 'Saymon21' Khabarov
  E-Mail: <saymon@hub21.ru>
 
  This program is free software: you can redistribute it and/or modify
