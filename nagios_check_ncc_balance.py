@@ -43,7 +43,7 @@ import argparse, sys
 try:
 	import ncc
 except ImportError:
-	print >> sys.stderr, 'Unable to import ncc module. See http://opensource.hub21.ru/nccbalancefetcher'
+	print 'Unable to import ncc module. See http://opensource.hub21.ru/nccbalancefetcher'
 	sys.exit(3)
 
 cliparser = argparse.ArgumentParser(prog=sys.argv[0],description='''Plugin for nagios to get balance from https://iserve.ncc-volga.ru/
