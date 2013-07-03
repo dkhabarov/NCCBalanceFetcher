@@ -65,21 +65,21 @@ def main():
 	try:
 		mybalance = lk.get_balance()
 	except ncc.QueryError as errstr:
-		print(errstr)
+		print('UNKNOWN Unable to get balance for ' + cliargs.user + '. Error: ' + str(errstr))
 		sys.exit(3)
         
 	if mybalance:
 		if cliargs.critical >= mybalance:
-			print('CRITICAL Balance = '+str(mybalance)+' RUB')
+			print('CRITICAL Balance for ' + cliargs.user + ' = ' + str(mybalance) + ' RUB')
 			sys.exit(2)
 		elif cliargs.warning >= mybalance:
-			print('WARNING Balance = '+str(mybalance)+' RUB')
+			print('WARNING Balance for ' + cliargs.user + '= ' + str(mybalance) + ' RUB')
 			sys.exit(1)
 		else:
-			print('OK. Balance = '+str(mybalance)+' RUB')
+			print('OK Balance for ' + cliargs.user + ' = ' + str(mybalance) + ' RUB')
 			sys.exit(0)
 	else:
-		print('UNKNOWN')
+		print('UNKNOWN Unable to get balance for ' + cliargs.user)
 		sys.exit(3)
                 
                  
