@@ -2,7 +2,7 @@
 #-*- coding: utf8 -*-
 # MuninNCC - Simple plugin for Munin Monitoring to monitor ncc balance
 
-# Copyright © 2012 Denis 'Saymon21' Khabarov
+# Copyright © 2013 Denis 'Saymon21' Khabarov
 # E-Mail: saymon at hub21 dot ru (saymon@hub21.ru)
 
 # This program is free software: you can redistribute it and/or modify
@@ -18,7 +18,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 '''
-Config for /etc/munin/plugin-conf.d/munin-node:
+To eneble plugin run: sudo ln -s /usr/share/munin/plugins/munin-ncc /etc/munin/plugins/ncc
+
+And config for /etc/munin/plugin-conf.d/munin-node:
 
 [ncc]
 	env.NCC_USER 908....
